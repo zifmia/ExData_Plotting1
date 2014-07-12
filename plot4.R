@@ -14,7 +14,7 @@ par(mfcol=c(2, 2), mar=c(4,4,2,2))
 
 with(powerData, {
     # top left, same as plot2
-    plot(DateTime, Global_active_power, type='n', ylab='Global Active Power (kilowatts)', xlab='', main='')
+    plot(DateTime, Global_active_power, type='n', ylab='Global Active Power', xlab='', main='')
     lines(DateTime, Global_active_power)
 
     # bottom left, same as plot3
