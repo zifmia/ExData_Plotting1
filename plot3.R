@@ -4,6 +4,7 @@ powerData <- read.csv('household_power_consumption.txt', sep=';', na.strings = "
 # restrict to only Feb 1-2, 2007
 powerData <- subset(powerData, Date %in% c('1/2/2007','2/2/2007'))
 
+# combine date+time into a single datetime column
 powerData$DateTime <- strptime(paste(powerData$Date,powerData$Time), format='%d/%m/%Y %H:%M:%S')
 
 png('plot3.png')
